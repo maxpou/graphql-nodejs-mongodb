@@ -1,4 +1,4 @@
-# GraphQL MongoDB Server
+# GraphQL, NodeJS and MongoDB
 
 [![Build Status](https://travis-ci.org/maxpou/graphql-nodejs-mongodb.svg?branch=master)](https://travis-ci.org/maxpou/graphql-nodejs-mongodb)
 
@@ -30,7 +30,7 @@ Forked from: https://github.com/bruno12mota/graphql-nodejs. Many thanks to him :
 
     ```
     {
-      beers(brewery: "Boostel") {
+      beers {
         name
         brewery
         alcohol
@@ -39,11 +39,23 @@ Forked from: https://github.com/bruno12mota/graphql-nodejs. Many thanks to him :
     }
     ```
 
+* List all beers + filtering/sorting
+
+    ```
+    {
+      beers(brewery: "Duvel", orderBy: ALCOHOL) {
+        name
+        alcohol
+      }
+    }
+    ```
+
+
 * List one specific beer:
 
     ```
     {
-      beers(id: "<yourIdHere>") {
+      beer(id: "<yourIdHere>") {
         name
       }
     }
