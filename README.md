@@ -1,5 +1,7 @@
 # GraphQL MongoDB Server
 
+[![Build Status](https://travis-ci.org/maxpou/graphql-nodejs-mongodb.svg?branch=master)](https://travis-ci.org/maxpou/graphql-nodejs-mongodb)
+
 GraphQL server in Node.js using Express, MongoDB and Mongoose.  
 Forked from: https://github.com/bruno12mota/graphql-nodejs. Many thanks to him :)
 
