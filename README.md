@@ -65,24 +65,32 @@ Forked from: https://github.com/bruno12mota/graphql-nodejs. Many thanks to him :
 
 ### Mutations
 
-* Adding a post:
+* Adding a new beer:
 
     ```
     mutation {
-      addBlogPost(data: {title: "Mutation", description: "Update or delete your datas!"})
+      addBeer(data: {name: "Delirium Tremens", brewery: "Huyghe Brewery", alcohol: 8.5})
     }
     ```
 
-* Adding a comment:
+* Remove a specific beers
 
     ```
     mutation {
-      addComment(data: {
-        postId:"5808e93dad0a0d08c45a6554",
-        text: "very good post!!!"
-      })
+      removeBeer(_id: "<yourIdHere>") {
+        name
+      }
     }
     ```
+
+* Remove all beers
+
+    ```
+    mutation {
+      removeAllBeers
+    }
+    ```
+
 
 ## License
 
