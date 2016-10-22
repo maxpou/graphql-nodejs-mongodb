@@ -5,33 +5,49 @@ Forked from: https://github.com/bruno12mota/graphql-nodejs. Many thanks to him :
 
 ## Installation&running
 
-1. Installation
+1. Install dependencies
 
     ```sh
-    # Install dependencies
     npm install
-    # Populate MongoDB database
+    ```
+
+2. Populate MongoDB database
+
+    ```sh
     mongoimport --db graphql --collection beers --jsonArray data.json
     ```
 
-2. Running: `npm start`
-3. Go to http://localhost:4000/graphql with your browser
+3. Running: `npm start`
+4. Go to [http://localhost:4000/graphql](http://localhost:4000/graphql) with your browser
 
 ## Requests sample
 
 ### Queries
 
-* List all posts:
+* List all beers:
 
     ```
     {
-      blogPosts {
-        _id
-        title
+      beers(brewery: "Boostel") {
+        name
+        brewery
+        alcohol
         description
       }
     }
     ```
+
+* List one specific beer:
+
+    ```
+    {
+      beers(id: "<yourIdHere>") {
+        name
+      }
+    }
+    ```
+
+**Note:** Brewery parameter is optional.
 
 ### Mutations
 
