@@ -9,7 +9,8 @@
     },
     "scripts": {
         "start": "node index.js",
-        "test": "mocha tests/"
+        "test": "mocha tests/",
+        "db": "mongoimport --db graphql --collection beers --jsonArray data.json"
     },
     "dependencies": {
         "babel": "^5.8.23",

@@ -24,7 +24,6 @@ export default {
   },
   resolve (root, params) {
     let orderBy = {};
-    console.log(params);
     if (params.orderBy) {
         orderBy = params.orderBy;
         delete params.orderBy;
