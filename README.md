@@ -40,7 +40,6 @@ Forked from: https://github.com/bruno12mota/graphql-nodejs. Many thanks to him :
     ```
     mutation {
       addComment(data: {
-        _id:"5808e93dad0a0d08c45a6554",
         postId:"5808e93dad0a0d08c45a6554",
         text: "very good post!!!"
       })
