@@ -5,8 +5,16 @@ Forked from: https://github.com/bruno12mota/graphql-nodejs. Many thanks to him :
 
 ## Installation&running
 
-1. `npm install`
-2. `npm start`
+1. Installation
+
+    ```sh
+    # Install dependencies
+    npm install
+    # Populate MongoDB database
+    mongoimport --db graphql --collection beers --jsonArray data.json
+    ```
+
+2. Running: `npm start`
 3. Go to http://localhost:4000/graphql with your browser
 
 ## Requests sample

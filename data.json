@@ -1,0 +1,73 @@
+[{
+    "name": "Kwak",
+    "brewery": "Boostel",
+    "alcohol": 6.8,
+    "description": "<3 <3 <3"
+}, {
+    "name": "Tripel Karmeliet",
+    "brewery": "Boostel",
+    "alcohol": 6.8,
+    "description": "<3 <3 <3"
+}, {
+    "name": "Deus",
+    "brewery": "Boostel",
+    "alcohol": 10
+}, {
+    "name": "Duvel",
+    "brewery": "Duvel",
+    "alcohol": 8.5
+}, {
+    "name": "Duvel tripel hop",
+    "brewery": "Duvel",
+    "alcohol": 9.5
+}, {
+    "name": "Maredsous 6° blond",
+    "brewery": "Duvel",
+    "alcohol": 6
+}, {
+    "name": "Maredsous 8° brown",
+    "brewery": "Duvel",
+    "alcohol": 8
+}, {
+    "name": "Maredsous 10° tripel",
+    "brewery": "Duvel",
+    "alcohol": 10
+}, {
+    "name": "Affligem Blond",
+    "brewery": "Affligem",
+    "alcohol": 6.8,
+    "description": "Affligem Blonde, the classic clear blonde abbey ale, with a gentle roundness and 6.8% alcohol. Low on bitterness, it is eminently drinkable."
+}, {
+    "name": "Affligem Dubbel",
+    "brewery": "Affligem",
+    "alcohol": 6.8,
+    "description": "A reddish-brown abbey ale brewed with dark malts. The secondary fermentation gives a fruity aroma and a unique spicy character with a distinctive aftertaste. Secondary fermentation in the bottle."
+}, {
+    "name": "Affligem Tripel",
+    "brewery": "Affligem",
+    "alcohol": 6.8,
+    "description": "The king of the abbey beers. It is amber-gold and pours with a deep head and original aroma, delivering a complex, full bodied flavour. Pure enjoyment! Secondary fermentation in the bottle."
+}, {
+    "name": "Guinness",
+    "brewery": "Guinness",
+    "alcohol": 4.8,
+    "description": "Guinness is Good for You"
+}, {
+    "name": "Hop house 13",
+    "brewery": "Guinness",
+    "alcohol": 4.1
+}, {
+    "name": "O'Hara's Irish Pale Ale",
+    "brewery": "O'Hara's",
+    "alcohol": 5.2,
+    "description": "A Contemporary style IPA with an Irish twist. Combining the balance of European IPAs with the generous dry hopping of American pale ales (APAs), this beer is everything an IPA should be and more."
+}, {
+    "name": "Hop Adventure",
+    "brewery": "O'Hara's",
+    "alcohol": 5,
+    "description": "The Hop Adventure Series has been developed to showcase some of our favourite and the most interesting hops from around the world."
+}, {
+    "name": "Journeyman's Pale Ale",
+    "brewery": "Tradesman Brewing",
+    "alcohol": 5.2
+}]
