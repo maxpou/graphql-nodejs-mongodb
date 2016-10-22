@@ -8,7 +8,8 @@
         "url": "https://github.com/maxpou/graphql-nodejs-mongodb"
     },
     "scripts": {
-        "start": "node index.js"
+        "start": "node index.js",
+        "test": "mocha tests/"
     },
     "dependencies": {
         "babel": "^5.8.23",
@@ -16,5 +17,9 @@
         "express-graphql": "^0.5.4",
         "graphql": "^0.7.0",
         "mongoose": "^4.3.5"
+    },
+    "devDependencies": {
+        "chai": "^3.2.0",
+        "chai-http": "^1.0.0"
     }
 }
