@@ -4,7 +4,7 @@ import {
 } from 'graphql';
 
 import blogPostInputType from '../../types/blog-post-input';
-import BlogPostModel from '../../../models/blog-post';
+import BlogPostModel from '../../../models/blog-post.model';
 
 export default {
   type: GraphQLBoolean,

@@ -5,7 +5,7 @@ import {
 
 import commentType from '../../types/comment';
 import getProjection from '../../get-projection';
-import CommentModel from '../../../models/comment';
+import CommentModel from '../../../models/comment.model';
 
 export default {
   type: commentType,

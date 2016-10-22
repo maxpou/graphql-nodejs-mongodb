@@ -4,7 +4,7 @@ import {
 } from 'graphql';
 
 import commentInputType from '../../types/comment-input';
-import CommentModel from '../../../models/comment';
+import CommentModel from '../../../models/comment.model';
 
 export default {
   type: GraphQLBoolean,

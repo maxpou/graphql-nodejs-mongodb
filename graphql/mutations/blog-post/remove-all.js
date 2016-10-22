@@ -2,7 +2,7 @@ import {
   GraphQLBoolean
 } from 'graphql';
 
-import BlogPostModel from '../../../models/blog-post';
+import BlogPostModel from '../../../models/blog-post.model';
 
 export default {
   type: GraphQLBoolean,

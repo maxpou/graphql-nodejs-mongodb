@@ -4,7 +4,7 @@ import {
 
 import blogPostType from '../../types/blog-post';
 import getProjection from '../../get-projection';
-import BlogPostModel from '../../../models/blog-post';
+import BlogPostModel from '../../../models/blog-post.model';
 
 export default {
   type: new GraphQLList(blogPostType),
