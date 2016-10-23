@@ -1,8 +1,8 @@
 # GraphQL, NodeJS and MongoDB
 
-[![Build Status](https://travis-ci.org/maxpou/graphql-nodejs-mongodb.svg?branch=master)](https://travis-ci.org/maxpou/graphql-nodejs-mongodb)
+[![Build Status](https://travis-ci.org/maxpou/graphql-nodejs-mongodb.svg?branch=master)](https://travis-ci.org/maxpou/graphql-nodejs-mongodb) [![Coverage Status](https://coveralls.io/repos/github/maxpou/graphql-nodejs-mongodb/badge.svg?branch=master)](https://coveralls.io/github/maxpou/graphql-nodejs-mongodb?branch=master)
 
-GraphQL server in Node.js using Express, MongoDB and Mongoose.  
+GraphQL server in Node.js using Express, MongoDB (and Mongoose).  
 Forked from: https://github.com/bruno12mota/graphql-nodejs. Many thanks to him :)
 
 ## Installation&running
@@ -61,8 +61,6 @@ Forked from: https://github.com/bruno12mota/graphql-nodejs. Many thanks to him :
     }
     ```
 
-**Note:** Brewery parameter is optional.
-
 ### Mutations
 
 * Adding a new beer:
@@ -91,16 +89,8 @@ Forked from: https://github.com/bruno12mota/graphql-nodejs. Many thanks to him :
     }
     ```
 
+## Tests
 
-## License
+Run tests with: `npm test` and tests + code coverage with `npm run coverage-text`.  
 
-<details>
-  <summary>MIT *(clic for details)*</summary>
-  The MIT License (MIT) Copyright (c)
-
-  Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-  The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-</details>
+More informations about [Chai.js Assertion Library](http://chaijs.com/).

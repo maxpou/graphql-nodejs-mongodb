@@ -39,8 +39,8 @@ describe('GraphQL Beers', function() {
       .send({query: graphqlQuery})
       .end(function(err, res){
         res.should.have.status(200);
-        res.should.be.json;
-        res.body['data']['beers'].should.be.a('array');
+        res.should.be.a.json;
+        res.body['data']['beers'].should.be.an('array');
         res.body['data']['beers'][0].should.have.property('name');
         res.body['data']['beers'][0].should.have.property('brewery');
         res.body['data']['beers'][0].should.have.property('alcohol');
@@ -63,7 +63,7 @@ describe('GraphQL Beers', function() {
       .send({query: graphqlQuery})
       .end(function(err, res){
         res.should.have.status(200);
-        res.should.be.json;
+        res.should.be.a.json;
         for (var beer of res.body['data']['beers']) {
           beer.brewery.should.equal('Duvel');
         }
@@ -85,7 +85,7 @@ describe('GraphQL Beers', function() {
       .send({query: graphqlQuery})
       .end(function(err, res){
         res.should.have.status(200);
-        res.should.be.json;
+        res.should.be.a.json;
         var previousAlcohol = 1;
         for (var beer of res.body['data']['beers']) {
           beer.alcohol.should.be.at.least(previousAlcohol);
@@ -110,7 +110,7 @@ describe('GraphQL Beers', function() {
       .send({query: graphqlQuery})
       .end(function(err, res){
         res.should.have.status(200);
-        res.should.be.json;
+        res.should.be.a.json;
         var previousAlcohol = 1;
         for (var beer of res.body['data']['beers']) {
           beer.brewery.should.equal('Duvel');
@@ -143,11 +143,11 @@ describe('GraphQL Beers', function() {
           .send({query: graphqlQuery})
           .end(function(err, res){
             res.should.have.status(200);
-            res.should.be.json;
-            res.body.should.be.a('object');
+            res.should.be.a.json;
+            res.body.should.be.an('object');
             res.body['data']['beer']['name'].should.equal('Custom Beer');
             done();
           });
       });
-    });
+  });
 });
