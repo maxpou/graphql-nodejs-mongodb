@@ -7,9 +7,7 @@ node_js: stable
 services:
   - mongodb
 
-before_install:
-  - npm install coveralls --save-dev
+script: npm run coverage
 
 after_success:
-  - npm run coverage
   - npm run coveralls
