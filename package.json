@@ -11,6 +11,7 @@
     "start": "node index.js",
     "test": "mocha tests/",
     "coverage": "nyc mocha tests/",
+    "coveralls": "nyc report --reporter=text-lcov | coveralls",
     "db": "mongoimport --db graphql --collection beers --jsonArray data.json"
   },
   "dependencies": {

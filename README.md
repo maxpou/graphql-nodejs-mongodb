@@ -1,6 +1,8 @@
 # GraphQL, NodeJS and MongoDB
 
-[![Build Status](https://travis-ci.org/maxpou/graphql-nodejs-mongodb.svg?branch=master)](https://travis-ci.org/maxpou/graphql-nodejs-mongodb) [![Coverage Status](https://coveralls.io/repos/github/maxpou/graphql-nodejs-mongodb/badge.svg?branch=master)](https://coveralls.io/github/maxpou/graphql-nodejs-mongodb?branch=master)
+[![Build Status](https://travis-ci.org/maxpou/graphql-nodejs-mongodb.svg?branch=master)](https://travis-ci.org/maxpou/graphql-nodejs-mongodb)
+[![Coverage Status](https://coveralls.io/repos/github/maxpou/graphql-nodejs-mongodb/badge.svg?branch=master)](https://coveralls.io/github/maxpou/graphql-nodejs-mongodb?branch=master)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/maxpou/graphql-nodejs-mongodb/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/maxpou/graphql-nodejs-mongodb/?branch=master)
 
 GraphQL server in Node.js using Express, MongoDB (and Mongoose).  
 Forked from: https://github.com/bruno12mota/graphql-nodejs. Many thanks to him :)
