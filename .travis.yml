@@ -11,4 +11,5 @@ before_install:
   - npm install coveralls --save-dev
 
 after_success:
+  - npm run coverage
   - npm run coveralls

@@ -8,7 +8,7 @@ var BeerList = require('../data.json');
 
 chai.use(chaiHttp);
 
-describe('GraphQL Beers', function() {
+describe('GraphQL Beers (mutations)', function() {
 
   beforeEach(function(done){
     BeerList.forEach(function (aBeer) {

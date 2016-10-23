@@ -93,6 +93,6 @@ Forked from: https://github.com/bruno12mota/graphql-nodejs. Many thanks to him :
 
 ## Tests
 
-Run tests with: `npm test` and tests + code coverage with `npm run coverage-text`.  
+Run tests with: `npm test` and tests + code coverage with `npm run coverage`.  
 
 More informations about [Chai.js Assertion Library](http://chaijs.com/).
