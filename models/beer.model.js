@@ -7,6 +7,7 @@ var beerSchema = new mongoose.Schema({
   },
   brewery: {
     type: String,
+    ref: 'Brewery',
     required: true
   },
   alcohol: {

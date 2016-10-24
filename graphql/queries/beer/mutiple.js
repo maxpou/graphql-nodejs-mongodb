@@ -6,6 +6,7 @@ import {
 
 import beerType from '../../types/beer';
 import BeerModel from '../../../models/beer.model';
+import BreweryModel from '../../../models/brewery.model';
 
 export default {
   type: new GraphQLList(beerType),
@@ -31,7 +32,10 @@ export default {
 
     return BeerModel
       .find(params)
+      .populate('brewery')
       .sort(orderBy)
-      .exec();
+      .exec(function(err, beers) {
+        console.log(beers);
+      });
   }
 };
