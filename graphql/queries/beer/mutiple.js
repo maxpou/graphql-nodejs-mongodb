@@ -10,17 +10,17 @@ import BeerModel from '../../../models/beer.model';
 export default {
   type: new GraphQLList(beerType),
   args: {
-      brewery: { type: GraphQLString },
-      orderBy: {
-          type: new GraphQLEnumType({
-            name: 'orderBy',
-            values: {
-              NAME: { value: "name" },
-              BREWERY: { value: "brewery" },
-              ALCOHOL: { value: "alcohol" }
-            }
-          })
-      }
+    brewery: { type: GraphQLString },
+    orderBy: {
+      type: new GraphQLEnumType({
+        name: 'orderBy',
+        values: {
+          NAME: { value: "name" },
+          BREWERY: { value: "brewery" },
+          ALCOHOL: { value: "alcohol" }
+        }
+      })
+    }
   },
   resolve (root, params) {
     let orderBy = {};
@@ -31,7 +31,10 @@ export default {
 
     return BeerModel
       .find(params)
+      .populate('brewery')
       .sort(orderBy)
-      .exec();
+      .exec(function(err, beers) {
+        console.log(beers);
+      });
   }
 };

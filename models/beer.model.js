@@ -1,5 +1,7 @@
 import mongoose from 'mongoose';
 
+import BreweryModel from './brewery.model';
+
 var beerSchema = new mongoose.Schema({
   name: {
     type: String,
@@ -7,6 +9,7 @@ var beerSchema = new mongoose.Schema({
   },
   brewery: {
     type: String,
+    ref: 'Brewery',
     required: true
   },
   alcohol: {

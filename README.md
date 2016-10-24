@@ -33,8 +33,12 @@ Forked from: https://github.com/bruno12mota/graphql-nodejs. Many thanks to him :
     ```
     {
       beers {
+        _id
         name
-        brewery
+        brewery {
+          name
+          location
+        }
         alcohol
         description
       }
@@ -45,19 +49,20 @@ Forked from: https://github.com/bruno12mota/graphql-nodejs. Many thanks to him :
 
     ```
     {
-      beers(brewery: "Duvel", orderBy: ALCOHOL) {
+      beers(brewery: "{breweryId}", orderBy: ALCOHOL) {
         name
         alcohol
       }
     }
-    ```
 
+    ```
+    **Note:** boostel is a brewery id
 
 * List one specific beer:
 
     ```
     {
-      beer(id: "<yourIdHere>") {
+      beer(id: "{beerId}") {
         name
       }
     }
@@ -77,7 +82,7 @@ Forked from: https://github.com/bruno12mota/graphql-nodejs. Many thanks to him :
 
     ```
     mutation {
-      removeBeer(_id: "<yourIdHere>") {
+      removeBeer(_id: "{beerId}") {
         name
       }
     }

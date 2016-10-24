@@ -6,24 +6,16 @@ import {
   GraphQLID
 } from 'graphql';
 
-import BreweryType from './brewery';
-
 export default new GraphQLObjectType({
-  name: 'Beer',
+  name: 'Brewery',
   fields: {
     _id: {
-      type: new GraphQLNonNull(GraphQLID)
+      type: new GraphQLNonNull(GraphQLString)
     },
     name: {
       type: GraphQLString
     },
-    brewery: {
-      type: BreweryType
-    },
-    alcohol: {
-      type: GraphQLFloat
-    },
-    description: {
+    location: {
       type: GraphQLString
     }
   }

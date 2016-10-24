@@ -20,6 +20,7 @@ export default {
 
     return BeerModel
       .findById(params.id)
+      .populate('brewery')
       .exec();
   }
 };

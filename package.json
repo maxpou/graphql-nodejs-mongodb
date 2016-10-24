@@ -9,11 +9,14 @@
   },
   "scripts": {
     "start": "node index.js",
+    "dev": "nodemon index.js",
     "test": "mocha tests/ --timeout=3000",
     "coverage": "nyc npm test",
     "report": "nyc report",
     "coveralls": "nyc report --reporter=text-lcov | coveralls",
-    "db": "mongoimport --db graphql --collection beers --jsonArray data.json"
+    "db": "npm run loadBeers && npm run loadBreweries",
+    "loadBeers": "mongoimport --db graphql --collection beers --jsonArray beers.json --drop",
+    "loadBreweries": "mongoimport --db graphql --collection breweries --jsonArray breweries.json --drop"
   },
   "dependencies": {
     "babel": "^5.8.23",

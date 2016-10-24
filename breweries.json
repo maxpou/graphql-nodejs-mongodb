@@ -1,0 +1,33 @@
+[{
+    "_id": "boostel",
+    "name": "Boostel",
+    "location": "Belgium"
+}, {
+    "_id": "duvel",
+    "name": "Duvel Moortgat",
+    "location": "Belgium"
+}, {
+    "_id": "affligem",
+    "name": "Affligem",
+    "location": "Belgium"
+}, {
+    "_id": "guinness",
+    "name": "Guinness",
+    "location": "Ireland"
+}, {
+    "_id": "oharas",
+    "name": "O'Hara's Irish Pale Ale",
+    "location": "Ireland"
+}, {
+    "_id": "tradesman",
+    "name": "Tradesman Brewing",
+    "location": "United States"
+}, {
+    "_id": "huyghe",
+    "name": "Brasserie Huyghe",
+    "location": "Belgium"
+}, {
+    "_id": "castelain",
+    "name": "Brasserie Castelain",
+    "location": "France"
+}]
