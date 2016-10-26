@@ -34,8 +34,6 @@ export default {
       .find(params)
       .populate('brewery')
       .sort(orderBy)
-      .exec(function(err, beers) {
-        console.log(beers);
-      });
+      .exec();
   }
 };

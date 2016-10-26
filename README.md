@@ -34,7 +34,6 @@ Forked from: https://github.com/bruno12mota/graphql-nodejs. Many thanks to him :
     {
       beers {
         name
-        brewery
         alcohol
         description
       }
@@ -52,6 +51,19 @@ Forked from: https://github.com/bruno12mota/graphql-nodejs. Many thanks to him :
     }
     ```
 
+* List all beers + brewery subresource
+
+    ```
+    {
+      beers {
+        name
+        brewery {
+          name
+          location
+        }
+      }
+    }
+    ```
 
 * List one specific beer:
 
@@ -59,6 +71,17 @@ Forked from: https://github.com/bruno12mota/graphql-nodejs. Many thanks to him :
     {
       beer(id: "<yourIdHere>") {
         name
+      }
+    }
+    ```
+
+* List all breweries:
+
+    ```
+    {
+      breweries {
+        name
+        location
       }
     }
     ```

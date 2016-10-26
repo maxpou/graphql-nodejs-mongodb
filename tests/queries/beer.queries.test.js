@@ -2,16 +2,22 @@ var chai     = require('chai');
 var chaiHttp = require('chai-http');
 var should   = chai.should();
 
-var server   = require('../index');
-var Beer     = require('../models/beer.model');
-var BeerList = require('../data.json');
+var server      = require('../../index');
+var Beer        = require('../../models/beer.model');
+var Brewery     = require('../../models/brewery.model');
+var BeerData    = require('../../beers.json');
+var BreweryData = require('../../breweries.json');
 
 chai.use(chaiHttp);
 
-describe('GraphQL Beers (mutations)', function() {
+describe('GraphQL Beer (queries)', function() {
 
   beforeEach(function(done){
-    BeerList.forEach(function (aBeer) {
+    BreweryData.forEach(function (aBeer) {
+      var newBrewery = new Brewery(aBeer);
+      newBrewery.save();
+    });
+    BeerData.forEach(function (aBeer) {
       var newBeer = new Beer(aBeer);
       newBeer.save();
     });
@@ -20,15 +26,15 @@ describe('GraphQL Beers (mutations)', function() {
 
   afterEach(function(done){
     Beer.collection.drop();
+    Brewery.collection.drop();
     done();
   });
 
-  it('should get all the beers', function(done) {
+  it('should display all the beers', function(done) {
     var graphqlQuery = `
     {
       beers {
         name
-        brewery
         alcohol
         description
       }
@@ -42,7 +48,6 @@ describe('GraphQL Beers (mutations)', function() {
         res.should.be.a.json;
         res.body['data']['beers'].should.be.an('array');
         res.body['data']['beers'][0].should.have.property('name');
-        res.body['data']['beers'][0].should.have.property('brewery');
         res.body['data']['beers'][0].should.have.property('alcohol');
         done();
       });
@@ -51,10 +56,12 @@ describe('GraphQL Beers (mutations)', function() {
   it('should display only beers from Duvel Brewery', function(done) {
     var graphqlQuery = `
     {
-      beers(brewery: "Duvel") {
+      beers(brewery: "duvel") {
         name
         alcohol
-        brewery
+        brewery {
+          name
+        }
       }
     }`;
 
@@ -65,7 +72,7 @@ describe('GraphQL Beers (mutations)', function() {
         res.should.have.status(200);
         res.should.be.a.json;
         for (var beer of res.body['data']['beers']) {
-          beer.brewery.should.equal('Duvel');
+          beer.brewery.name.should.equal('Duvel Moortgat');
         }
         done();
       });
@@ -100,7 +107,9 @@ describe('GraphQL Beers (mutations)', function() {
     {
       beers(brewery: "Duvel", orderBy: ALCOHOL) {
         name
-        brewery
+        brewery {
+          name
+        }
         alcohol
       }
     }`;
@@ -113,7 +122,7 @@ describe('GraphQL Beers (mutations)', function() {
         res.should.be.a.json;
         var previousAlcohol = 1;
         for (var beer of res.body['data']['beers']) {
-          beer.brewery.should.equal('Duvel');
+          beer.brewery.name.should.equal('Duvel Moortgat');
           beer.alcohol.should.be.at.least(previousAlcohol);
           previousAlcohol = beer.alcohol;
         }
@@ -122,32 +131,32 @@ describe('GraphQL Beers (mutations)', function() {
   });
 
   it('should display a SINGLE beer', function(done) {
-      var newBeer = new Beer({
-        name: 'Custom Beer',
-        brewery: 'Custom Brewery',
-        alcohol: 9.5,
-        description: 'miam miam'
-      });
+    var newBeer = new Beer({
+      name: 'Custom Beer',
+      brewery: 'Custom Brewery',
+      alcohol: 9.5,
+      description: 'miam miam'
+    });
 
-      newBeer.save(function(err, data) {
+    newBeer.save(function(err, data) {
 
-        var graphqlQuery = `
-        {
-          beer(id: "${data._id}") {
-            name
-          }
-        }`;
+      var graphqlQuery = `
+      {
+        beer(id: "${data._id}") {
+          name
+        }
+      }`;
 
-        chai.request(server)
-          .post('/graphql')
-          .send({query: graphqlQuery})
-          .end(function(err, res){
-            res.should.have.status(200);
-            res.should.be.a.json;
-            res.body.should.be.an('object');
-            res.body['data']['beer']['name'].should.equal('Custom Beer');
-            done();
-          });
-      });
+      chai.request(server)
+        .post('/graphql')
+        .send({query: graphqlQuery})
+        .end(function(err, res){
+          res.should.have.status(200);
+          res.should.be.a.json;
+          res.body.should.be.an('object');
+          res.body['data']['beer']['name'].should.equal('Custom Beer');
+          done();
+        });
+    });
   });
 });

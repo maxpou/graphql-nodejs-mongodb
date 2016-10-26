@@ -10,7 +10,7 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "test": "mocha tests/ --timeout=3000",
+    "test": "mocha tests/* --timeout=3000",
     "coverage": "nyc npm test",
     "report": "nyc report",
     "coveralls": "nyc report --reporter=text-lcov | coveralls",
