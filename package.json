@@ -19,11 +19,15 @@
     "loadBreweries": "mongoimport --db graphql --collection breweries --jsonArray breweries.json --drop"
   },
   "dependencies": {
+    "@risingstack/graffiti": "^3.2.0",
+    "@risingstack/graffiti-mongoose": "^5.3.0",
     "babel": "^5.8.23",
+    "body-parser": "^1.15.2",
     "express": "^4.13.3",
     "express-graphql": "^0.5.4",
-    "graphql": "^0.7.0",
-    "mongoose": "^4.3.5"
+    "graphql": "^0.7.2",
+    "mongoose": "^4.3.5",
+    "mongoose-autopopulate": "^0.4.0"
   },
   "devDependencies": {
     "chai": "^3.2.0",

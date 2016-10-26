@@ -7,12 +7,17 @@ var brewerySchema = new mongoose.Schema({
   },
   name: {
     type: String,
-    required: true
+    required: true,
+    indexed: true
   },
   location: {
     type: String,
     required: true
   },
+  beers: [{
+    type: String,
+    ref: 'Beer'
+  }]
 });
 
 export default mongoose.model('Brewery', brewerySchema);

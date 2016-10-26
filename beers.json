@@ -1,102 +1,125 @@
 [{
-    "name": "Kwak",
-    "brewery": "boostel",
-    "alcohol": 6.8,
-    "description": "<3 <3 <3"
+  "_id": "kwak",
+  "name": "Kwak",
+  "brewery": "boostel",
+  "alcohol": 6.8,
+  "description": "<3 <3 <3"
 }, {
-    "name": "Tripel Karmeliet",
-    "brewery": "boostel",
-    "alcohol": 6.8,
-    "description": "<3 <3 <3"
+  "_id": "tripel_karmeliet",
+  "name": "Tripel Karmeliet",
+  "brewery": "boostel",
+  "alcohol": 6.8,
+  "description": "<3 <3 <3"
 }, {
-    "name": "Deus",
-    "brewery": "boostel",
-    "alcohol": 10
+  "_id": "deus",
+  "name": "Deus",
+  "brewery": "boostel",
+  "alcohol": 10
 }, {
-    "name": "Duvel",
-    "brewery": "duvel",
-    "alcohol": 8.5
+  "_id": "duvel",
+  "name": "Duvel",
+  "brewery": "duvel",
+  "alcohol": 8.5
 }, {
-    "name": "Duvel tripel hop",
-    "brewery": "duvel",
-    "alcohol": 9.5
+  "_id": "duvel_tripel_hop",
+  "name": "Duvel tripel hop",
+  "brewery": "duvel",
+  "alcohol": 9.5
 }, {
-    "name": "Maredsous 6° blond",
-    "brewery": "duvel",
-    "alcohol": 6
+  "_id": "maredsous_6_blond",
+  "name": "Maredsous 6° blond",
+  "brewery": "duvel",
+  "alcohol": 6
 }, {
-    "name": "Maredsous 8° brown",
-    "brewery": "duvel",
-    "alcohol": 8
+  "_id": "maredsous_8_brown",
+  "name": "Maredsous 8° brown",
+  "brewery": "duvel",
+  "alcohol": 8
 }, {
-    "name": "Maredsous 10° tripel",
-    "brewery": "duvel",
-    "alcohol": 10
+  "_id": "maredsous_10_tripel",
+  "name": "Maredsous 10° tripel",
+  "brewery": "duvel",
+  "alcohol": 10
 }, {
-    "name": "Affligem Blond",
-    "brewery": "affligem",
-    "alcohol": 6.8,
-    "description": "Affligem Blonde, the classic clear blonde abbey ale, with a gentle roundness and 6.8% alcohol. Low on bitterness, it is eminently drinkable."
+  "_id": "affligem_blond",
+  "name": "Affligem Blond",
+  "brewery": "affligem",
+  "alcohol": 6.8,
+  "description": "Affligem Blonde, the classic clear blonde abbey ale, with a gentle roundness and 6.8% alcohol. Low on bitterness, it is eminently drinkable."
 }, {
-    "name": "Affligem Dubbel",
-    "brewery": "affligem",
-    "alcohol": 6.8,
-    "description": "A reddish-brown abbey ale brewed with dark malts. The secondary fermentation gives a fruity aroma and a unique spicy character with a distinctive aftertaste. Secondary fermentation in the bottle."
+  "_id": "affligem_dubbel",
+  "name": "Affligem Dubbel",
+  "brewery": "affligem",
+  "alcohol": 6.8,
+  "description": "A reddish-brown abbey ale brewed with dark malts. The secondary fermentation gives a fruity aroma and a unique spicy character with a distinctive aftertaste. Secondary fermentation in the bottle."
 }, {
-    "name": "Affligem Tripel",
-    "brewery": "affligem",
-    "alcohol": 6.8,
-    "description": "The king of the abbey beers. It is amber-gold and pours with a deep head and original aroma, delivering a complex, full bodied flavour. Pure enjoyment! Secondary fermentation in the bottle."
+  "_id": "affligem_tripel",
+  "name": "Affligem Tripel",
+  "brewery": "affligem",
+  "alcohol": 6.8,
+  "description": "The king of the abbey beers. It is amber-gold and pours with a deep head and original aroma, delivering a complex, full bodied flavour. Pure enjoyment! Secondary fermentation in the bottle."
 }, {
-    "name": "Guinness",
-    "brewery": "guinness",
-    "alcohol": 4.8,
-    "description": "Guinness is Good for You"
+  "_id": "guinness",
+  "name": "Guinness",
+  "brewery": "guinness",
+  "alcohol": 4.8,
+  "description": "Guinness is Good for You"
 }, {
-    "name": "Hop house 13",
-    "brewery": "guinness",
-    "alcohol": 4.1
+  "_id": "hop_house_13",
+  "name": "Hop house 13",
+  "brewery": "guinness",
+  "alcohol": 4.1
 }, {
-    "name": "O'Hara's Irish Pale Ale",
-    "brewery": "oharas",
-    "alcohol": 5.2,
-    "description": "A Contemporary style IPA with an Irish twist. Combining the balance of European IPAs with the generous dry hopping of American pale ales (APAs), this beer is everything an IPA should be and more."
+  "_id": "oharas_irish_pale_ale",
+  "name": "O'Hara's Irish Pale Ale",
+  "brewery": "oharas",
+  "alcohol": 5.2,
+  "description": "A Contemporary style IPA with an Irish twist. Combining the balance of European IPAs with the generous dry hopping of American pale ales (APAs), this beer is everything an IPA should be and more."
 }, {
-    "name": "Hop Adventure",
-    "brewery": "oharas",
-    "alcohol": 5,
-    "description": "The Hop Adventure Series has been developed to showcase some of our favourite and the most interesting hops from around the world."
+  "_id": "hop_adventure",
+  "name": "Hop Adventure",
+  "brewery": "oharas",
+  "alcohol": 5,
+  "description": "The Hop Adventure Series has been developed to showcase some of our favourite and the most interesting hops from around the world."
 }, {
-    "name": "Journeyman's Pale Ale",
-    "brewery": "tradesman brewing",
-    "alcohol": 5.2
+  "_id": "journeymans_pale_ale",
+  "name": "Journeyman's Pale Ale",
+  "brewery": "tradesman brewing",
+  "alcohol": 5.2
 }, {
-    "name": "Delirium Tremens",
-    "brewery": "huyghe",
-    "alcohol": 8.5
+  "_id": "delirium_tremens",
+  "name": "Delirium Tremens",
+  "brewery": "huyghe",
+  "alcohol": 8.5
 }, {
-    "name": "Delirium Nocturnum",
-    "brewery": "huyghe",
-    "alcohol": 8.5
+  "_id": "delirium_nocturnum",
+  "name": "Delirium Nocturnum",
+  "brewery": "huyghe",
+  "alcohol": 8.5
 }, {
-    "name": "Delirium Christmas",
-    "brewery": "huyghe",
-    "alcohol": 10,
-    "description": "Why it's not Christmas every day?"
+  "_id": "delirium_christmas",
+  "name": "Delirium Christmas",
+  "brewery": "huyghe",
+  "alcohol": 10,
+  "description": "Why it's not Christmas every day?"
 }, {
-    "name": "Ch'ti Triple",
-    "brewery": "castelain",
-    "alcohol": 7.5
+  "_id": "chti_triple",
+  "name": "Ch'ti Triple",
+  "brewery": "castelain",
+  "alcohol": 7.5
 }, {
-    "name": "La Jade",
-    "brewery": "castelain",
-    "alcohol": 4.5
+  "_id": "la_jade",
+  "name": "La Jade",
+  "brewery": "castelain",
+  "alcohol": 4.5
 }, {
-    "name": "La bête",
-    "brewery": "castelain",
-    "alcohol": 8
+  "_id": "la_bete",
+  "name": "La bête",
+  "brewery": "castelain",
+  "alcohol": 8
 }, {
-    "name": "Ch'ti Blonde",
-    "brewery": "castelain",
-    "alcohol": 6.4
+  "_id": "chti_blonde",
+  "name": "Ch'ti Blonde",
+  "brewery": "castelain",
+  "alcohol": 6.4
 }]

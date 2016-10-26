@@ -1,21 +1,25 @@
 import express from 'express';
+import { json } from 'body-parser';
 import graphqlHTTP from 'express-graphql';
 import mongoose from 'mongoose';
-mongoose.Promise = global.Promise;
-
-import schema from './graphql';
-
-var app = express();
-
-// GraphqQL server route
-app.use('/graphql', graphqlHTTP(req => ({
-  schema,
-  pretty: true,
-  graphiql: true
-})));
+import graffiti from '@risingstack/graffiti';
+import {getSchema} from '@risingstack/graffiti-mongoose';
 
 // Connect mongo database
+mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://localhost/graphql');
+
+import Brewery from './models/brewery.model';
+import Beer from './models/beer.model';
+
+var app = express();
+app.use(json());
+
+// GraphqQL server route
+app.use(graffiti.express({
+  schema: getSchema([Beer, Brewery]),
+  context: {} // custom context
+}));
 
 // start server
 let server = app.listen(4000, function () {

@@ -1,33 +1,41 @@
 [{
-    "_id": "boostel",
-    "name": "Boostel",
-    "location": "Belgium"
+  "_id": "boostel",
+  "name": "Boostel",
+  "location": "Belgium",
+  "beers": ["kwak", "tripel_karmeliet", "deus"]
 }, {
-    "_id": "duvel",
-    "name": "Duvel Moortgat",
-    "location": "Belgium"
+  "_id": "duvel",
+  "name": "Duvel Moortgat",
+  "location": "Belgium",
+  "beers": ["duvel", "duvel_tripel_hop", "maredsous_6_blond", "maredsous_8_brown", "maredsous_10_tripel"]
 }, {
-    "_id": "affligem",
-    "name": "Affligem",
-    "location": "Belgium"
+  "_id": "affligem",
+  "name": "Affligem",
+  "location": "Belgium",
+  "beers": ["affligem_blond", "affligem_dubbel", "affligem_tripel"]
 }, {
-    "_id": "guinness",
-    "name": "Guinness",
-    "location": "Ireland"
+  "_id": "guinness",
+  "name": "Guinness",
+  "location": "Ireland",
+  "beers": ["guinness", "hop_house_13"]
 }, {
-    "_id": "oharas",
-    "name": "O'Hara's Irish Pale Ale",
-    "location": "Ireland"
+  "_id": "oharas",
+  "name": "O'Hara's",
+  "location": "Ireland",
+  "beers": ["oharas_irish_pale_ale", "hop_adventure"]
 }, {
-    "_id": "tradesman",
-    "name": "Tradesman Brewing",
-    "location": "United States"
+  "_id": "tradesman",
+  "name": "Tradesman Brewing",
+  "location": "United States",
+  "beers": ["journeymans_pale_ale"]
 }, {
-    "_id": "huyghe",
-    "name": "Brasserie Huyghe",
-    "location": "Belgium"
+  "_id": "huyghe",
+  "name": "Brasserie Huyghe",
+  "location": "Belgium",
+  "beers": ["delirium_tremens", "delirium_nocturnum", "delirium_christmas"]
 }, {
-    "_id": "castelain",
-    "name": "Brasserie Castelain",
-    "location": "France"
+  "_id": "castelain",
+  "name": "Brasserie Castelain",
+  "location": "France",
+  "beers": ["chti_triple", "la_jade", "la_bete", "chti_blonde"]
 }]

@@ -1,8 +1,10 @@
 import mongoose from 'mongoose';
 
-import BreweryModel from './brewery.model';
-
 var beerSchema = new mongoose.Schema({
+  _id: {
+    type: String,
+    required: true
+  },
   name: {
     type: String,
     required: true
@@ -23,6 +25,5 @@ var beerSchema = new mongoose.Schema({
     required: false
   },
 });
-
 
 export default mongoose.model('Beer', beerSchema);
